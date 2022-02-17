@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     fetch('https://newsapi.org/v2/top-headlines?' +
     'country=in&' +
-    'apiKey=5a5bc7bbb22e43038a01792634d6160b').then((response) => response.json())
+    'apiKey={your_api_key}').then((response) => response.json())
     .then((res) => res.articles)
     .then((res1) => setContent(res1))
     .catch((err) => {
